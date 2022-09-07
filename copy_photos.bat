@@ -1,9 +1,10 @@
 @echo off
-:: Variable creation
+:: Fill paths accordingly
 set phone_camera=/storage/self/primary/DCIM/Camera
 set folder_pc=%USERPROFILE%\Desktop
+set adb_path=
+
 set datetimef=%date:~-4%_%date:~3,2%_%date:~0,2% 
-set adb_path=C:\Users\benja\Downloads\Reload_cellphone\platform-tools
 cd %adb_path%
 
 :: Test if folder to save photos exists, if not, creates.
