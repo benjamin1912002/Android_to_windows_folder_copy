@@ -16,7 +16,7 @@ if not exist %folder_pc%\%datetimef% (
 adb devices
 
 echo Copiando fotos del celular, dependiendo de la cantidad puede tardar unos minutos...
-adb pull %phone_camera% %folder_pc%
+adb pull %phone_camera% %folder_pc%\%datetimef%
 
 echo Fotos copiadas a la PC!.. Eliminando fotos del celular.
 adb shell rm -rR %phone_camera%
